@@ -1,7 +1,24 @@
 <div class="left">
 
-    <input type="text" placeholder="name" #name>
-    <input type="text" placeholder="url" #url>
+    <!-- <input type="text" placeholder="name" #name>
+    <input type="text" placeholder="url" #url> 
   
-    <button (click)="addSample(name.value,url.value)">Add a Sample</button>
+     <button (click)="addSample(name.value,url.value)">Add a Sample</button> -->
+     
+    <!-- <form class='example-form'>
+      <mat-form-field class="example-full-width">  
+        <input matInput placeholder="Name" #name/>
+      </mat-form-field>
+    </form> -->
+     <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Name" #name>
+      </mat-form-field>
+    
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="URL" #url>
+      </mat-form-field>
+      <button mat-button class="mat-raised-button mat-primary" (click)="addSample(name.value, url.value)">Click me!</button>
+    </form> 
+    
   </div>
